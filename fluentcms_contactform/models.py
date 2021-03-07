@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from django.utils.module_loading import import_string
 from django.utils.translation import ugettext_lazy as _
 from fluent_contents.models import ContentItem
